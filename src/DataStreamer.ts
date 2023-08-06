@@ -26,7 +26,7 @@ class DataStreamer {
     request.open('GET', DataStreamer.API_URL, false);
 
     request.onload = () => {
-      if (request.status === 200) {
+      if (request.status === 200 ) {
         callback(JSON.parse(request.responseText));
       } else {
         alert ('Request failed');
